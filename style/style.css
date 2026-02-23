@@ -1,0 +1,405 @@
+/* =========================
+   Learnova - Global Styles
+   ========================= */
+
+/* Reset + Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #F8FAFC;
+  color: #0F172A;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  background: #0F172A;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.88);
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #FFFFFF;
+}
+
+.nav-links a.active {
+  color: #FFFFFF;
+  border-bottom: 2px solid #2563EB;
+  padding-bottom: 3px;
+}
+ .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: rgba(255,255,255,.9);
+  transition: 0.2s;
+}
+
+.icon-link:hover {
+  background: rgba(255,255,255,0.1);
+  color: #ffffff;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+/* =========================
+   Buttons
+   ========================= */
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #599e51;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #8ebd88;
+  transform: translateY(-1px);
+}
+
+/* secondary button if you need later */
+.btn-outline {
+  display: inline-block;
+  padding: 10px 18px;
+  background: transparent;
+  color: #2563EB;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #2563EB;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-outline:hover {
+  background: #2563EB;
+  color: #FFFFFF;
+}
+
+/* =========================
+   Hero
+   ========================= */
+.hero {
+  padding: 70px 0 55px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 26px;
+  color: #475569;
+  font-size: 16px;
+}
+
+/* =========================
+   Sections / Headings
+   ========================= */
+section {
+  padding: 30px 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+/* =========================
+   Cards Grid
+   ========================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  padding: 25px 0;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.card img {
+  border-radius: 12px;
+  height: 160px;
+   width: 100%;
+  object-fit: cover;
+  margin-bottom: 14px;
+  background: #E2E8F0;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #64748B;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Small helper for centered titles */
+.center {
+  text-align: center;
+}
+
+/* =========================
+   Footer
+   ========================= */
+.footer {
+  background: #0F172A;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 18px 0;
+  margin-top: 30px;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* =========================
+   Course Details Page
+   ========================= */
+
+.course-hero {
+  padding: 60px 0 30px;
+  text-align: center;
+}
+
+.course-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.course-hero p {
+  color: #64748B;
+}
+
+.course-layout {
+  display: flex;
+  gap: 40px;
+  padding: 40px 0 60px;
+  flex-wrap: wrap;
+}
+
+.course-main {
+  flex: 2;
+  min-width: 280px;
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.course-main h2 {
+  margin-bottom: 15px;
+}
+
+.course-list {
+  list-style: none;
+}
+
+.course-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #E2E8F0;
+  color: #475569;
+}
+
+.course-sidebar {
+  flex: 1;
+  min-width: 250px;
+}
+
+.course-card-box {
+  background: #FFFFFF;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15,23,42,0.08);
+  border: 1px solid rgba(15,23,42,0.05);
+}
+
+.course-card-box h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #2563EB;
+}
+
+.course-card-box p {
+  margin-bottom: 10px;
+  color: #475569;
+}
+.course-details-img {
+  width: 70%;
+  max-width: 450px;
+  margin: 0 auto 25px;
+  display: block;
+   
+}
+
+/* =========================
+   Auth (Login) Page
+   ========================= */
+.auth-page{
+  padding: 55px 0 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card{
+  width: 100%;
+  max-width: 460px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(15,23,42,0.08);
+  border: 1px solid rgba(15,23,42,0.06);
+}
+
+.auth-title{
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.auth-subtitle{
+  color: #64748B;
+  margin-bottom: 20px;
+}
+
+.auth-form .field{
+  margin-bottom: 14px;
+}
+
+.auth-form label{
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.auth-form input{
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid #CBD5E1;
+  outline: none;
+  transition: 0.2s;
+  background: #FFFFFF;
+}
+
+.auth-form input:focus{
+  border-color: #2563EB;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
+}
+
+.auth-btn{
+  width: 100%;
+  margin-top: 6px;
+}
+
+.auth-hint{
+  margin-top: 14px;
+  color: #64748B;
+  font-size: 14px;
+  text-align: center;
+}
+
+.auth-link{
+  color: #2563EB;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link:hover{
+  text-decoration: underline;
+}
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .nav-links a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 14px;
+  }
+
+  .card img {
+    height: 140px;
+  }
+}
