@@ -20,7 +20,6 @@
         <a href="about.html">about</a>
         <a href="contact.html">Contact</a>
         <a href="login.html" class="icon-link" aria-label="Login" title="Login">
-            <a href="login.html" class="icon-link" aria-label="Login" title="Login">
   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
        stroke-linecap="round" stroke-linejoin="round">
     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -31,42 +30,75 @@
     </div>
   </header>
 
-  <!-- PAGE -->
+ 
   <main class="container auth-page">
     <div class="auth-card">
       <h1 class="auth-title">Create Account</h1>
       <p class="auth-subtitle">Join Learnova and start learning today.</p>
+<h2>Student Registration</h2>
+<form class="auth-form" action="#" method="post">
 
-      <form class="auth-form" action="#" method="post">
+  <div class="field">
+    <label>Full Name</label>
+    <input type="text" placeholder="Your full name" required>
+  </div>
 
-        <div class="field">
-          <label>Full Name</label>
-          <input type="text" placeholder="Your full name" required>
-        </div>
+  <div class="field">
+    <label>Email</label>
+    <input type="email" placeholder="you@example.com" required>
+  </div>
 
-        <div class="field">
-          <label>Email</label>
-          <input type="email" placeholder="you@example.com" required>
-        </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" placeholder="Create password" required>
+  </div>
 
-        <div class="field">
-          <label>Password</label>
-          <input type="password" placeholder="Create password" required>
-        </div>
+  <div class="field">
+    <label>Gender</label>
+    <div class="option-group">
+      <label class="option-item">
+        <input type="radio" name="gender" value="male"> Male
+      </label>
+      <label class="option-item">
+        <input type="radio" name="gender" value="female"> Female
+      </label>
+    </div>
+  </div>
 
-        <div class="field">
-          <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm password" required>
-        </div>
+  <div class="field">
+  <label>Areas of Interest</label><br>
 
-        <button type="submit" class="btn auth-btn">Register</button>
+  <input type="checkbox" name="interest" value="web"> Web Development<br>
+  <input type="checkbox" name="interest" value="devops"> DevOps<br>
+  <input type="checkbox" name="interest" value="security"> Cybersecurity<br>
+  <input type="checkbox" name="interest" value="cloud"> Cloud Computing
+</div>
 
-        <p class="auth-hint">
-          Already have an account?
-          <a href="login.html" class="auth-link">Sign In</a>
-        </p>
+  <div class="field">
+    <label>Level</label>
+    <select>
+      <option>Beginner</option>
+      <option>Intermediate</option>
+      <option>Advanced</option>
+    </select>
+  </div>
 
-      </form>
+  <div class="field">
+    <label>Comments</label>
+    <textarea rows="4" placeholder="Write your comments"></textarea>
+  </div>
+
+  <button type="submit" class="btn auth-btn">Submit</button>
+  <button type="reset" class="btn auth-btn">Reset</button>
+
+  <p class="auth-hint">
+    Already have an account?
+    <a href="login.html" class="auth-link">Sign In</a>
+  </p>
+
+</form>
+
+
     </div>
   </main>
 

@@ -1,8 +1,4 @@
-/* =========================
-   Learnova - Global Styles
-   ========================= */
 
-/* Reset + Font */
 * {
   margin: 0;
   padding: 0;
@@ -28,9 +24,7 @@ img {
   margin: 0 auto;
 }
 
-/* =========================
-   Navbar
-   ========================= */
+/*Navbar*/
 .navbar {
   background: #0F172A;
   padding: 16px 0;
@@ -90,9 +84,7 @@ img {
   width: 20px;
   height: 20px;
 }
-/* =========================
-   Buttons
-   ========================= */
+/* Buttons*/
 .btn {
   display: inline-block;
   padding: 10px 18px;
@@ -109,27 +101,8 @@ img {
   transform: translateY(-1px);
 }
 
-/* secondary button if you need later */
-.btn-outline {
-  display: inline-block;
-  padding: 10px 18px;
-  background: transparent;
-  color: #2563EB;
-  text-decoration: none;
-  border-radius: 10px;
-  border: 2px solid #2563EB;
-  font-weight: 600;
-  transition: 0.2s;
-}
 
-.btn-outline:hover {
-  background: #2563EB;
-  color: #FFFFFF;
-}
-
-/* =========================
-   Hero
-   ========================= */
+/* Hero*/
 .hero {
   padding: 70px 0 55px;
   text-align: center;
@@ -148,9 +121,19 @@ img {
   font-size: 16px;
 }
 
-/* =========================
-   Sections / Headings
-   ========================= */
+
+.hero-image {
+    flex: 0 0 400px; 
+    margin-left: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* Sections */
 section {
   padding: 30px 0;
 }
@@ -160,9 +143,7 @@ h2 {
   margin-bottom: 14px;
 }
 
-/* =========================
-   Cards Grid
-   ========================= */
+/* Cards */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -204,14 +185,11 @@ h2 {
   margin-bottom: 12px;
 }
 
-/* Small helper for centered titles */
 .center {
   text-align: center;
 }
 
-/* =========================
-   Footer
-   ========================= */
+/* Footer*/
 .footer {
   background: #0F172A;
   color: rgba(255, 255, 255, 0.85);
@@ -225,9 +203,7 @@ h2 {
 }
 
 
-/* =========================
-   Course Details Page
-   ========================= */
+/* Course Details Page */
 
 .course-hero {
   padding: 60px 0 30px;
@@ -305,10 +281,98 @@ h2 {
   display: block;
    
 }
+/*aboyt page*/
+.about-section{
+padding-bottom:60px;
+}
 
-/* =========================
-   Auth (Login) Page
-   ========================= */
+.statistics-box{
+max-width:900px;
+margin:auto;
+text-align:center;
+margin-bottom:40px;
+}
+
+.section-title{
+margin-bottom:15px;
+}
+
+.statistics-table{
+margin:auto;
+}
+
+.external-link{
+margin-top:10px;
+}
+
+.project-box{
+background:#ffffff;
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(15,23,42,0.08);
+border:1px solid rgba(15,23,42,0.05);
+margin-bottom:40px;
+}
+
+.project-box h2{
+margin-bottom:15px;
+}
+
+.project-text{
+color:#64748B;
+margin-bottom:10px;
+}
+
+/* contact page */
+.contact-section{
+padding-bottom:60px;
+display:flex;
+justify-content:center;
+}
+
+.contact-box{
+max-width:700px;
+background:#ffffff;
+padding:40px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(15,23,42,0.08);
+border:1px solid rgba(15,23,42,0.05);
+text-align:center;
+}
+
+.contact-box h1{
+margin-bottom:10px;
+}
+
+.contact-description{
+color:#64748B;
+margin-bottom:25px;
+}
+
+.contact-list{
+list-style:none;
+padding:0;
+margin-bottom:25px;
+}
+
+.contact-list li{
+margin-bottom:12px;
+font-size:16px;
+}
+
+.contact-list a{
+color:#2563EB;
+text-decoration:none;
+}
+
+.contact-list a:hover{
+text-decoration:underline;
+}
+
+.contact-note{
+color:#475569;
+}
+/* (Login) Page */
 .auth-page{
   padding: 55px 0 70px;
   display: flex;
@@ -346,7 +410,11 @@ h2 {
   margin-bottom: 6px;
 }
 
-.auth-form input{
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"],
+.auth-form select,
+.auth-form textarea {
   width: 100%;
   padding: 11px 12px;
   border-radius: 10px;
@@ -356,6 +424,14 @@ h2 {
   background: #FFFFFF;
 }
 
+.auth-form input[type="text"]:focus,
+.auth-form input[type="email"]:focus,
+.auth-form input[type="password"]:focus,
+.auth-form select:focus,
+.auth-form textarea:focus {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
+}
 .auth-form input:focus{
   border-color: #2563EB;
   box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
@@ -382,9 +458,26 @@ h2 {
 .auth-link:hover{
   text-decoration: underline;
 }
-/* =========================
-   Responsive
-   ========================= */
+.option-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+}
+
+.option-item input[type="radio"],
+.option-item input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+/*  Responsive*/
 @media (max-width: 600px) {
   .hero h1 {
     font-size: 30px;
