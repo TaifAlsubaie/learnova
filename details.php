@@ -1,3 +1,4 @@
+<?php include "navbar.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,28 +10,6 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
-   <header class="navbar">
-    <div class="container">
-      <div class="logo">Learnova</div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="about.html">about</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html" class="icon-link" aria-label="Login" title="Login">
-  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-       stroke-linecap="round" stroke-linejoin="round">
-    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-    <circle cx="12" cy="7" r="4"/>
-  </svg>
-</a> 
-      </nav>
-    </div>
-  </header>
-
 
   <section class="course-hero">
     <div class="container">
@@ -62,7 +41,7 @@
         <p><strong>Level:</strong> Beginner</p>
         <p><strong>Duration:</strong> 8 Hours</p>
         <p><strong>Language:</strong> English</p>
-        <a href="register.html" class="btn">Enroll Now</a>
+        <a href="register.php?id=1" class="btn">Enroll Now</a>
       </div>
     </div>
 

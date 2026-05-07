@@ -1,3 +1,4 @@
+<?php include "navbar.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,26 +14,6 @@
 
 
 <body>
-  <!--NAVBAR -->
-  <header class="navbar">
-    <div class="container">
-      <div class="logo">Learnova</div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="courses.html">Courses</a>
-        <a href="about.html">about</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="login.html" class="icon-link" aria-label="Login" title="Login">
-  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-       stroke-linecap="round" stroke-linejoin="round">
-    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-    <circle cx="12" cy="7" r="4"/>
-  </svg>
-</a> 
-      </nav>
-    </div>
-  </header>
 
 
  
@@ -42,7 +23,7 @@
     <div class="hero-text" style="flex: 1;">
       <h1 id="main-title">Unlock Your Potential with Learnova</h1>
       <p>Practical online courses to help you build real skills and grow your career.</p>
-      <a href="courses.html" class="btn">Browse Courses</a>
+      <a href="courses.php" class="btn">Browse Courses</a>
     </div>
 
     <div class="hero-image" style="flex: 0 0 400px; padding-left: 20px;">
@@ -81,21 +62,21 @@
        <img src="images/DevOps.jpg" alt="Course">
         <h3>DevOps Fundamentals</h3>
         <p>Learn CI/CD, Docker and Kubernetes from scratch.</p>
-        <a href="details.html" class="btn">View Details</a>
+        <a href="details.php?id=1" class="btn">View Details</a>
       </div>
 
       <div class="card">
         <img src="images/fortend.jpg" alt="Course">
         <h3>Frontend Mastery</h3>
         <p>Master HTML, CSS, and JavaScript step by step.</p>
-        <a href="details.html" class="btn">View Details</a>
+        <a href="details.php?id=2" class="btn">View Details</a>
       </div>
 
       <div class="card">
        <img src="images/cybersecurity.jpg" alt="Course">
         <h3>Cybersecurity Basics</h3>
         <p>Understand security principles and protection methods.</p>
-        <a href="details.html" class="btn">View Details</a>
+        <a href="details.php?id=3" class="btn">View Details</a>
       </div>
 
     </div>
