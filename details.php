@@ -53,6 +53,6 @@
       <p>© 2026 Learnova. All rights reserved.</p>
     </div>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

@@ -188,6 +188,6 @@ $result = $conn->query("SELECT * FROM students");
     <p>© 2026 Learnova Admin Panel</p>
   </div>
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>

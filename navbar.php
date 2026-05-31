@@ -2,6 +2,14 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }?>
+
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
 <header class="navbar">
   <div class="container">
 
@@ -9,20 +17,32 @@ if (session_status() === PHP_SESSION_NONE) {
 
     <nav class="nav-links">
 
-      <a href="index.php">Home</a>
-      <a href="courses.php">Courses</a>
-      <a href="about.php">About</a>
-      <a href="services.php">Services</a>
-      <a href="contact.php">Contact</a>
+      <a href="index.php" class="<?= ($currentPage == 'index.php') ? 'active' : '' ?>">Home</a>
 
+<a href="courses.php" class="<?= ($currentPage == 'courses.php') ? 'active' : '' ?>">Courses</a>
+
+<a href="about.php" class="<?= ($currentPage == 'about.php') ? 'active' : '' ?>">About</a>
+
+<a href="services.php" class="<?= ($currentPage == 'services.php') ? 'active' : '' ?>">Services</a>
+
+<a href="contact.php" class="<?= ($currentPage == 'contact.php') ? 'active' : '' ?>">Contact</a>
+
+<a href="interactive.php" class="<?= ($currentPage == 'interactive.php') ? 'active' : '' ?>">Interactive</a>
+
+<a href="validation.php" class="<?= ($currentPage == 'validation.php') ? 'active' : '' ?>">Validation</a>
       <?php if (isset($_SESSION['user'])) { ?>
 
           <!-- 👇 المستخدم مسجل دخول -->
 
-          <a href="my-learning.php">My Learning</a>
+          <a href="my-learning.php"
+   class="<?= ($currentPage == 'my-learning.php') ? 'active' : '' ?>">
+   My Learning
+</a>
 
           <!-- 👤 Profile Icon -->
-          <a href="profile.php" class="icon-link" title="Profile">
+           <a href="profile.php"
+   class="icon-link <?= ($currentPage == 'profile.php') ? 'active' : '' ?>"
+   title="Profile">
               <svg class="icon" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -34,7 +54,10 @@ if (session_status() === PHP_SESSION_NONE) {
       <?php } elseif (isset($_SESSION['admin'])) { ?>
 
           <!-- 👇 الأدمن -->
-          <a href="view.php">Dashboard</a>
+          <a href="view.php"
+   class="<?= ($currentPage == 'view.php') ? 'active' : '' ?>">
+   Dashboard
+</a>
 
          
 
@@ -43,7 +66,9 @@ if (session_status() === PHP_SESSION_NONE) {
           <!-- 👇 الزائر -->
 
           <!-- 🔐 Login Icon -->
-          <a href="login.php" class="icon-link" title="Login">
+          <a href="login.php"
+   class="icon-link <?= ($currentPage == 'login.php') ? 'active' : '' ?>"
+   title="Login">
               <svg class="icon" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -53,7 +78,9 @@ if (session_status() === PHP_SESSION_NONE) {
           </a>
 
       <?php } ?>
-
+<button class="dark-btn" onclick="toggleTheme()">
+  🌙
+</button>
     </nav>
 
   </div>

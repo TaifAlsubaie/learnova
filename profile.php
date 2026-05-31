@@ -116,6 +116,6 @@ $courses = explode(",", $user['courses']);
 </div>
 
 </div>
-
+<script src="script.js"></script>
 </body>
 </html>

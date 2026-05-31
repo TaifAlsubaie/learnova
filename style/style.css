@@ -63,9 +63,10 @@ img {
 }
 
 .nav-links a.active {
-  color: #FFFFFF;
-  border-bottom: 2px solid #2563EB;
-  padding-bottom: 3px;
+  background: white;
+  color: #0F172A;
+  padding: 8px 14px;
+  border-radius: 8px;
 }
  .icon-link {
   display: inline-flex;
@@ -588,6 +589,125 @@ color:#475569;
 .option-item input[type="checkbox"] {
   width: auto;
   margin: 0;
+}
+/* Interactive Page */
+
+.interactive-section{
+  padding:60px 0;
+}
+
+.interactive-card{
+  width:90%;
+  max-width:1100px;
+  margin:auto;
+  background:#ffffff;
+  border-radius:20px;
+  padding:40px;
+  box-shadow:0 10px 25px rgba(15,23,42,0.08);
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.interactive-content{
+  flex:1;
+  min-width:300px;
+}
+
+.interactive-content h1{
+  margin-bottom:15px;
+}
+
+#dateTime{
+  color:#64748B;
+  margin-bottom:25px;
+}
+
+.interactive-buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.interactive-image{
+  flex:1;
+  min-width:300px;
+  text-align:center;
+}
+
+.interactive-image img{
+  width:100%;
+  max-width:420px;
+  border-radius:16px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.interactive-box{
+  width:250px;
+  height:120px;
+  background:#599e51;
+  border-radius:12px;
+  color:white;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  margin-top:25px;
+  cursor:pointer;
+}
+
+
+.dark-btn{
+  background:none;
+  border:none;
+  color:white;
+  cursor:pointer;
+  font-size:18px;
+  margin-left:15px;
+}
+.dark-mode{
+  background:#0F172A;
+  color:#ffffff;
+}
+
+.dark-mode .card,
+.dark-mode .auth-card,
+.dark-mode .project-box,
+.dark-mode .contact-box,
+.dark-mode .course-card-box{
+  background:#1E293B;
+  color:white;
+}
+
+.dark-mode .card p,
+.dark-mode .project-text,
+.dark-mode .contact-description,
+.dark-mode .auth-subtitle,
+.dark-mode .course-main p,
+.dark-mode .course-list li{
+  color:#CBD5E1;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select{
+  background:#334155;
+  color:white;
+  border:1px solid #475569;
+}
+
+.dark-mode .statistics-table td{
+  background:#1E293B;
+  color:white;
+}
+
+.dark-mode .statistics-table tr:nth-child(even){
+  background:#334155;
 }
 /*  Responsive*/
 @media (max-width: 600px) {
